@@ -1,0 +1,52 @@
+body {
+    background-color:#EAF6F6;
+}
+
+h1 {
+    color:red;
+    font-size: 100px;
+}
+
+h1#heading {
+    color: blue;
+}
+
+img.baccon { 
+    background-color: green;
+    clip-path: circle();
+}
+
+img.broccoli {
+    background-color:red;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+p#row1 {
+    animation: color-change 2s infinite;
+}
+
+p#row2 {
+    animation: color-change1 2s infinite;
+}
+
+p#row3 {
+    animation: color-change2 2s infinite;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: blue; }
+}
+
+@keyframes color-change1 {
+    0% { color: orange; }
+    50% { color: violet; }
+    100% { color: red; }
+}
+
+@keyframes color-change2 {
+    0% { color: royalblue; }
+    50% { color: greenyellow; }
+    100% { color: purple; }
+}
